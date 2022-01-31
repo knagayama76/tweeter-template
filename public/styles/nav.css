@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: #4056a1;
+  color: #ffffff;
+}
+
+span.title {
+  font-family: "Bungee", sans-serif;
+  font-size: 3rem;
+  margin: 0, 1.5em;
+}
+
+nav .discription {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0, 1.5em;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
