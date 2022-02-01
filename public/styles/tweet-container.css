@@ -1,0 +1,59 @@
+article header {
+  background-color: #f4f1ec;
+  background-image: none;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+article {
+  margin-top: 3em;
+  border: 3px solid;
+  padding: 1rem;
+}
+
+article:hover {
+  box-shadow: 5px 5px #a0abd0;
+}
+
+.tweeter-content {
+  border-bottom: 3px solid;
+  margin-bottom: 10px;
+}
+
+.name-mention {
+  color: #a0abd0;
+}
+
+p {
+  width: 97%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.tweeter-name {
+  flex-direction: row;
+}
+
+.icons {
+  flex-direction: row;
+}
+
+.fa-solid.fa-flag,
+.fa-solid.fa-retweet,
+.fa-solid.fa-heart {
+  color: #4056a1;
+  padding-left: 0.5em;
+}
+
+.fa-solid.fa-flag:hover,
+.fa-solid.fa-retweet:hover,
+.fa-solid.fa-heart:hover {
+  color: #ffaa00;
+}
