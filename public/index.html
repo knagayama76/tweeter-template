@@ -25,6 +25,14 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- timeago -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
@@ -75,28 +83,28 @@
           </div>
         </form>
       </section>
-      <article>
-        <header>
-          <div class="tweeter-name">
-            <img src="#" />
-            <span>Newton</span>
+      <div id="tweets-container">
+        <article class="tweet">
+          <header>
+            <div class="tweeter-name">
+              <img src="#" />
+              <span>Newton</span>
+            </div>
+            <span class="name-handle">@Sirisaac</span>
+          </header>
+          <div class="tweeter-content">
+            <p>HI!</p>
           </div>
-          <span class="name-mention">@Sirisaac</span>
-        </header>
-        <div class="tweeter-content">
-          <p>
-            If I have seen further it is by standing on the shoulder of giants.
-          </p>
-        </div>
-        <footer>
-          <output>10 days ago</output>
-          <div class="icons">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
+          <footer>
+            <time class="timeago">10 days ago</time>
+            <div class="icons">
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+      </div>
     </main>
   </body>
 </html>
