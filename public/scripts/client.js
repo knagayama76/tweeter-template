@@ -52,29 +52,34 @@ const createTweetElement = function (tweet) {
   `;
 };
 
-const renderTweets = function (tweets) {
-  $("#tweets-container").empty();
-  // loops through tweets
-  for (const tweet of tweets) {
-    // calls createTweetElement for each tweet
-    const tweetElement = createTweetElement(tweet);
-    $("#tweets-container").prepend(tweetElement);
-  }
-};
-
 $(() => {
-  // renderTweets(data);
+  const renderTweets = function (tweets) {
+    $("#tweets-container").empty();
+    // loops through tweets
+    for (const tweet of tweets) {
+      // calls createTweetElement for each tweet
+      const tweetElement = createTweetElement(tweet);
+      $("#tweets-container").prepend(tweetElement);
+    }
+  };
 
   $("#client-tweet").submit((e) => {
     e.preventDefault();
-    console.log(e);
-    const value = $("#client-tweet").serialize();
-    console.log(value);
+    const tweet = $("#tweet-text").val();
 
-    $.post("/tweets", value).then(() => {
-      console.log("success");
-      loadTweets();
-    });
+    if (!tweet) {
+      alert("Please tweet!🐥🐥🐥");
+    } else if (tweet.length > 140) {
+      return alert("Your tweet is too long!");
+    } else {
+      const value = $("#client-tweet").serialize();
+      console.log(value, value.length);
+
+      $.post("/tweets", value).then(() => {
+        console.log("success");
+        loadTweets();
+      });
+    }
   });
 
   const loadTweets = function () {
