@@ -39,6 +39,11 @@ footer {
   flex-direction: row;
 }
 
+p {
+  width: 97%;
+  text-align: left;
+}
+
 .icons {
   flex-direction: row;
 }
