@@ -33,3 +33,9 @@ main {
   width: 90%;
   align-self: center;
 }
+
+.error {
+  border: 5px solid;
+  color: red;
+  margin-top: 1rem;
+}

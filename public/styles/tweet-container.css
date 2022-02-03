@@ -18,6 +18,7 @@ article header {
 
 .tweeter-content {
   border-bottom: 3px solid;
+  overflow-wrap: break-word;
 }
 
 article:hover {

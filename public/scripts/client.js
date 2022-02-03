@@ -23,6 +23,12 @@ const data = [
   },
 ];
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function (tweet) {
   return `
       <article class="tweet">
@@ -35,7 +41,7 @@ const createTweetElement = function (tweet) {
       </header>
       <div class="tweeter-content">
         <p>
-         ${tweet.content.text}
+        ${escape(tweet.content.text)}
         </p>
       </div>
       <footer>
@@ -63,17 +69,21 @@ $(() => {
     }
   };
 
+  $(".error").hide();
   $("#client-tweet").submit((e) => {
     e.preventDefault();
     const tweet = $("#tweet-text").val();
 
     if (!tweet) {
-      alert("Please tweet!🐥🐥🐥");
+      $(".error").slideDown("slow", () =>
+        $(".error-text").text("💥💥💥Please tweet!🐥🐥🐥")
+      );
     } else if (tweet.length > 140) {
-      return alert("Your tweet is too long!");
+      $(".error").slideDown("slow", () =>
+        $(".error-text").text("💥💥💥Your tweet is too long!")
+      );
     } else {
       const value = $("#client-tweet").serialize();
-      console.log(value, value.length);
 
       $.post("/tweets", value).then(() => {
         console.log("success");
