@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -60,13 +61,13 @@
         <i class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
-    <header>
+    <header class="nav-header">
       <div>
         <img src="/images/profile-hex.png" />
       </div>
       <br />
       <div>
-        <h2><span>Amy</span> Mansell</h2>
+        <h2 class="nav-name"><span>Amy</span> Mansell</h2>
       </div>
     </header>
 
@@ -76,7 +77,6 @@
         <div class="error">
           <p class="error-text"></p>
         </div>
-        <h2>Compose Tweet</h2>
         <form id="client-tweet">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>

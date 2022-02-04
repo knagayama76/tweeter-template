@@ -39,3 +39,43 @@ main {
   color: red;
   margin-top: 1rem;
 }
+
+.container {
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #ffaa00;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    background-color: #4056a1;
+    color: #ffffff;
+  }
+  body {
+    flex-direction: row;
+  }
+
+  .container {
+    margin-top: 200px;
+    margin-right: 30px;
+  }
+
+  .nav-header {
+    width: 300px;
+    height: 450px;
+    padding: 250px;
+    padding-top: 50px;
+    margin-top: 200px;
+    margin-right: 30px;
+    margin-left: 50px;
+  }
+
+  .nav-name {
+    width: 200px;
+  }
+}
