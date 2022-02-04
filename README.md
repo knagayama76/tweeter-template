@@ -19,4 +19,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-![Screenshot of main desktop page]()
+![Screenshot of main desktop page](https://github.com/knagayama76/tweeter-template/blob/master/docs/tweet-desktop.png)
+![Screenshot of main tablet page](https://github.com/knagayama76/tweeter-template/blob/master/docs/tweet-tablet.png)
+![Screenshot of error page 1](https://github.com/knagayama76/tweeter-template/blob/master/docs/tweet-error1.png)
+![Screenshot of error page 2](https://github.com/knagayama76/tweeter-template/blob/master/docs/tweet-error2.png)
