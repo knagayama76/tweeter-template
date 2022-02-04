@@ -33,3 +33,9 @@ button {
 .counter {
   font-family: "Bungee", sans-serif;
 }
+
+::placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
