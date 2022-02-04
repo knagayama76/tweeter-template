@@ -44,6 +44,7 @@ main {
   margin-top: 4rem;
 }
 
+/* for Tablet view */
 @media (max-width: 768px) {
   .navbar {
     background-color: #ffaa00;
@@ -51,6 +52,7 @@ main {
   }
 }
 
+/* for Desktop view */
 @media (min-width: 1024px) {
   .navbar {
     background-color: #4056a1;

@@ -23,12 +23,14 @@ const data = [
   },
 ];
 
+// Escape function for preventing XSS
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
+// Create a new tweet
 const createTweetElement = function (tweet) {
   return `
       <article class="tweet">
@@ -58,7 +60,9 @@ const createTweetElement = function (tweet) {
   `;
 };
 
+// DOM ready function
 $(() => {
+  // Render each tweet
   const renderTweets = function (tweets) {
     $("#tweets-container").empty();
     // loops through tweets
@@ -69,6 +73,7 @@ $(() => {
     }
   };
 
+  // Submitting new tweet
   $(".error").hide();
   $("#client-tweet").submit((e) => {
     e.preventDefault();
@@ -92,6 +97,7 @@ $(() => {
     }
   });
 
+  // Load tweets
   const loadTweets = function () {
     $.ajax({
       url: "/tweets",

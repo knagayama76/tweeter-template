@@ -1,5 +1,6 @@
 "use strict";
 
+// Function counting the character input
 $(document).ready(function () {
   $("#tweet-text").on("input", function () {
     const valLength = $("#tweet-text").val().length;
